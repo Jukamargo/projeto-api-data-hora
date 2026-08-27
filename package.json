@@ -1,0 +1,13 @@
+{
+  "name": "api-data-hora",
+  "version": "1.0.0",
+  "description": "API Express de data e hora com frontend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Moonlit Clock 🦇</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Estrelas decorativas -->
+
+    <div class="stars">
+        <span>✦</span>
+        <span>✧</span>
+        <span>⋆</span>
+        <span>✦</span>
+        <span>⋆</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>⋆</span>
+    </div>
+
+    <main class="container">
+
+        <div class="moon">☾</div>
+
+        <p class="small-title">
+            ✦ welcome to the night ✦
+        </p>
+
+        <h1>
+            Moonlit
+            <span>Clock</span>
+        </h1>
+
+        <p class="subtitle">
+            a little clock for the night owls 🦇
+        </p>
+
+        <section class="clock-card">
+
+            <div class="bat">🦇</div>
+
+            <div class="date-section">
+
+                <p class="label">
+                    TODAY
+                </p>
+
+                <h2 id="data">
+                    --/--/----
+                </h2>
+
+                <p id="diaSemana">
+                    carregando...
+                </p>
+
+            </div>
+
+            <div class="divider">
+                <span>♡</span>
+            </div>
+
+            <div class="time-section">
+
+                <p class="label">
+                    CURRENT TIME
+                </p>
+
+                <div id="hora" class="time">
+                    --:--:--
+                </div>
+
+            </div>
+
+            <div class="card-footer">
+                <span>☾</span>
+                <span>♡</span>
+                <span>✦</span>
+                <span>♡</span>
+                <span>☽</span>
+            </div>
+
+        </section>
+
+        <div class="status">
+            <span class="status-dot"></span>
+
+            <span id="status">
+                conectando com a API...
+            </span>
+        </div>
+
+        <p class="footer-text">
+            made with ♡ & moonlight
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
