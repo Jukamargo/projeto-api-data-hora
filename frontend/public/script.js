@@ -4,9 +4,7 @@ const diaSemanaElement = document.getElementById("diaSemana");
 const statusElement = document.getElementById("status");
 
 async function buscarDataHora() {
-
     try {
-
         const resposta = await fetch("/api/datetime");
 
         if (!resposta.ok) {
@@ -16,19 +14,17 @@ async function buscarDataHora() {
         const dados = await resposta.json();
 
         dataElement.textContent = dados.data;
-
         horaElement.textContent = dados.hora;
-
         diaSemanaElement.textContent = dados.diaSemana;
 
-        statusElement.textContent = "API conectada • tempo atualizado";
+        statusElement.textContent =
+            "API conectada • tempo atualizado";
 
     } catch (erro) {
-
         console.error(erro);
 
         statusElement.textContent =
-            "não foi possível conectar com a API";
+            "Não foi possível conectar com a API";
     }
 }
 
